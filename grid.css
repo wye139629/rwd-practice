@@ -9,7 +9,7 @@
 .row{
   display: flex;
   flex-wrap: wrap;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   margin-left: -15px;
   margin-right: -15px;
 }

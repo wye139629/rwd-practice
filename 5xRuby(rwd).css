@@ -1,3 +1,48 @@
+header{
+  width: 100%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  background-color: white;
+  position: fixed;
+  box-shadow: 0 3px 5px rgb(202, 201, 201);
+  z-index: 1;
+  top: 0;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo a{
+  color: red;
+  text-decoration: none;
+}
+.log-pic img{
+  width: 100%;
+}
+.header-nav{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list ul{
+  display: flex;
+}
+.nav-list ul li{
+  margin: 0 10px;
+}
+.nav-list ul li a{
+  font-size: 16px;
+  text-decoration: none;
+  color: #666666;
+}
+
+
+
+
+
+
+
+
 .banner img{
   width: 100%;
 }
@@ -34,6 +79,7 @@
 }
 .hot-item img{
   width: 100%;
+  vertical-align: middle;
 }
 
 .more-lesson-bottom{
