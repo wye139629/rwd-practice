@@ -37,12 +37,6 @@ header{
 }
 
 
-
-
-
-
-
-
 .banner img{
   width: 100%;
 }
@@ -88,7 +82,7 @@ header{
  text-align: center;
  margin:50px auto 0;
  border-radius: 10px;
-  background-color: red;
+ background-color: red;
 }
 .more-lesson-bottom a{
   color: white;
@@ -96,6 +90,9 @@ header{
 }
 .recommand-content{
   justify-content: center;
+}
+.recommand-pic{
+outline: 1px solid red;
 }
 .recommand-pic img{
   width: 100%;
