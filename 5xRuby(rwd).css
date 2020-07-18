@@ -1,29 +1,43 @@
 header{
   width: 100%;
-  padding: 20px 40px;
-  box-sizing: border-box;
+  /* padding: 15px 40px; */
+  /* box-sizing: border-box; */
   background-color: white;
   position: fixed;
   box-shadow: 0 3px 5px rgb(202, 201, 201);
   z-index: 1;
   top: 0;
 }
+.header-nav{
+  display: flex;
+}
 .logo{
   display: flex;
   align-items: center;
+  padding: 15px;
 }
 .logo a{
   color: red;
   text-decoration: none;
 }
-.log-pic img{
+.logo a h1{
+  white-space: nowrap;
+}
+.logo-pic{
+  margin-right: -15px;
+}
+.logo-pic a img{
   width: 100%;
 }
 .header-nav{
+  width: 100%;
   justify-content: space-between;
   align-items: center;
 }
-
+input{
+  position: absolute;
+  opacity: 0;
+}
 .nav-list ul{
   display: flex;
 }
@@ -32,10 +46,13 @@ header{
 }
 .nav-list ul li a{
   font-size: 16px;
+  white-space: nowrap;
   text-decoration: none;
   color: #666666;
 }
-
+.banner{
+  margin-top: 75px;
+}
 
 .banner img{
   width: 100%;
@@ -92,7 +109,8 @@ header{
   justify-content: center;
 }
 .recommand-pic{
-outline: 1px solid red;
+  width: 80px;
+  outline: 1px solid red;
 }
 .recommand-pic img{
   width: 100%;
@@ -119,4 +137,55 @@ footer{
   margin-top: 50px;
   border-top: 1px solid #ccc;
   padding: 10px 0 20px;
+}
+@media screen and (max-width: 992px) {
+  .header-nav{
+    flex-wrap: wrap;
+    position: relative;
+  }  
+  label{
+      width: 71.61px;
+      height: 71.61px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      /* bottom: 0; */
+      margin: auto;
+      background-color: #d90845;
+    }
+    label::after{
+      content: "";
+      display: block;
+      width: 50px;
+      height: 2px;
+      background-color: white;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      box-shadow: 0 10px 0 0 white,
+                  0 -10px 0 0 white;
+    }
+    input:checked ~ .nav-list{
+      opacity: 1;
+      height: 100%;
+      /* margin-top: 0; */
+    }
+    .nav-list{
+      width: 100%;
+      /* margin-top: -100%; */
+      opacity: 0;
+      height: 0;
+      border-top: 1px solid #ccc;
+      transition:.5s;
+    }     
+    .nav-list ul{
+      flex-direction: column;
+      align-items: center;
+    }
+    .nav-list ul li{
+      margin: 20px 0;
+    }
 }
